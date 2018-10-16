@@ -58,10 +58,20 @@ Vue.component('autocomplete-vue', AutocompleteVue);
 ></autocomplete-vue>
 ```
 
-### Listen to the "select" event
+### Listen to the "select" event on the event itself
 
 ```
 <autocomplete-vue v-on:selected="method" />
+```
+
+### or import the event bus separately
+
+```
+import { autocompleteBus } from 'autocomplete-vue';
+
+autocompleteBus.$on('autocomplete-select', function (selectedValue) {
+  // do something
+});
 ```
 
 ## Properties
