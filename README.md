@@ -58,7 +58,7 @@ Vue.component('autocomplete-vue', AutocompleteVue);
 ></autocomplete-vue>
 ```
 
-### Listen to the "select" event on the event itself
+### Listen to the "select" event on the element itself
 
 ```
 <autocomplete-vue v-on:selected="method" />
